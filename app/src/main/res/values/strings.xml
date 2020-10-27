@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GlumciRecycleView19</string>
+    <string name="Notification_Title">Notification</string>
+    <string name="Notification_Text">This is notification text</string>
+    <string name="Notification_settings_show">Show notifications</string>
+    <string name="Notification_settings">Notifications</string>
+</resources>

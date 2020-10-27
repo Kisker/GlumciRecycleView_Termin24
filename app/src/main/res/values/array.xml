@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="izmena_GlumacUnos">
+        <item>Glumac1</item>
+        <item>Glumac2</item>
+        <item>Glumac3</item>
+        <item>Glumac4</item>
+    </string-array>
+
+    <string-array name="izmena_GlumacVrednost">
+        <item>Glumac1</item>
+        <item>Glumac2</item>
+        <item>Glumac3</item>
+        <item>Glumac4</item>
+    </string-array>
+
+
+    <string-array name="izmena_FilmUnos">
+        <item>Film1</item>
+        <item>Film2</item>
+        <item>Film3</item>
+        <item>Film4</item>
+    </string-array>
+
+    <string-array name="izmena_FilmVrednost">
+        <item>Film1</item>
+        <item>Film2</item>
+        <item>Film3</item>
+        <item>Film4</item>
+    </string-array>
+
+</resources>

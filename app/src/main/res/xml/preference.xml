@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Ime glumca">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="promeni_ime"
+            android:summary="Dozvoli promenu imena glumca"
+            android:title="Promeni ime i prezime glumca" />
+        <ListPreference
+            android:defaultValue="1"
+            android:dependency="promeni_ime"
+            android:entries="@array/izmena_GlumacUnos"
+            android:entryValues="@array/izmena_GlumacVrednost"
+            android:key="list_preference_1"
+            android:title="Ime i prezime glumca" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Naziv filma">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="promeni_film"
+            android:summary="Dozvoli promenu naziva filma"
+            android:title="Promeni naziv filma" />
+        <ListPreference
+            android:defaultValue="1"
+            android:dependency="promeni_film"
+            android:entries="@array/izmena_FilmUnos"
+            android:entryValues="@array/izmena_FilmVrednost"
+            android:key="list_preference_2"
+            android:title="Naziv filma" />
+    </PreferenceCategory>
+</PreferenceScreen>
