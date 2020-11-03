@@ -6,30 +6,46 @@
 
         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="promeni_ime"
+            android:key="@string/pref_sync"
             android:summary="Dozvoli promenu imena glumca"
             android:title="Promeni ime i prezime glumca" />
         <ListPreference
-            android:defaultValue="1"
-            android:dependency="promeni_ime"
+            android:defaultValue="Glumac1"
+            android:dependency="@string/pref_sync"
             android:entries="@array/izmena_GlumacUnos"
             android:entryValues="@array/izmena_GlumacVrednost"
-            android:key="list_preference_1"
-            android:title="Ime i prezime glumca" />
+            android:key="@string/pref_sync_list"
+            android:title="Ime i prezime glumca"
+            android:summary="%s"/>
     </PreferenceCategory>
     <PreferenceCategory android:title="Naziv filma">
 
         <CheckBoxPreference
             android:defaultValue="false"
-            android:key="promeni_film"
+            android:key="@string/pref_sync1"
             android:summary="Dozvoli promenu naziva filma"
             android:title="Promeni naziv filma" />
         <ListPreference
-            android:defaultValue="1"
-            android:dependency="promeni_film"
+            android:defaultValue="Film1"
+            android:dependency="@string/pref_sync1"
             android:entries="@array/izmena_FilmUnos"
             android:entryValues="@array/izmena_FilmVrednost"
-            android:key="list_preference_2"
-            android:title="Naziv filma" />
+            android:key="@string/pref_sync_list1"
+            android:title="Naziv filma"
+            android:summary="%s"/>
     </PreferenceCategory>
+
+
+    <!-- Ovde ubacujemo kako zelimo da prikazemo Notifications u Podesavanja. Title
+          odredimo u strings.xml-->
+        <PreferenceCategory
+            android:key="notification_settings"
+            android:title="@string/Notification_Title">
+
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="notifications_show"
+                android:title="@string/Notification_settings_show" />
+        </PreferenceCategory>
+
 </PreferenceScreen>
